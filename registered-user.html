@@ -1,0 +1,34 @@
+<Html>
+    <head>
+        <link rel="stylesheet" href="./src/output.css">
+        <link rel="icon" type="images/" href="">
+        <title></title>
+    </head>
+    <body class="bg-slate-500 flex justify-center items-center my-[30vh] flex-col gap-10 text-3xl">
+        <h1 class="text-blue-100 mt-[-3vw]" style="filter: drop-shadow(1px 2px 2px black);">Registered Users</h1>
+        <img src="./images/1f97a.png" alt="" class="w-[30px] absolute top-[14vw] right-[39vw]" style="filter: drop-shadow(0px 0px 2px black);">
+
+        <main class="w-[40vw] h-[30vh] shadow-[2px_2px_10px_-2px_black] rounded-[5px] overflow-y-auto bg-gray-800" id="main"></main>
+        <div class="absolute" style="display: none;" id="editInformation">
+            <form class="grid grid-rows-5 gap-8 shadow-[2px_2px_10px_black] w-[25vw] h-[50vh] px-[3vw] pt-[4vh] pb-5 rounded-[5px]" style="z-index: 100; backdrop-filter: blur(10px);" id="editInformation-form">
+                <img src="https://icongr.am/material/account-tie.svg?size=30&color=currentColor" class="absolute w-7 left-[3.4vw] top-[4.5vh]" alt="firstname-icon">
+                <input type="text" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] bg-blue-100 pl-10 text-slate-700" style="width: 19vw; font-size: 1vw;;" name="firstname" id="firstname">
+                <img src="https://icongr.am/material/account-tie.svg?size=30&color=currentColor" class="absolute left-[3.4vw] top-[14vh]" alt="lastname-icon">
+                <input type="text" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] pl-10 bg-blue-100 text-slate-700" style="width: 19vw; font-size: 1vw;" name="lastname" id="lastname">
+                <img src="https://icongr.am/material/account.svg?size=30&color=currentColor" class="absolute left-[3.4vw] top-[23.5vh]" alt="username-icon">
+                <input type="text" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] pl-10 bg-blue-100 text-slate-700" style="width: 19vw; font-size: 1vw;" name="username" id="username">
+                <img src="https://icongr.am/material/account-key.svg?size=30&color=currentColor" class="absolute left-[3.3vw] top-[33.2vh]" alt="password-icon">
+                <input type="password" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] pl-10 bg-blue-100 text-slate-700" style="width: 19vw; font-size: 1vw;" name="password" id="password">
+                <p class="absolute bottom-[35vh] left-[43vw] text-red-700" style="display: none;" id="error-message">Be more than 8 characters</p>
+                <input type="submit" value="Update" class="border-0 outline-0 w-[10vw] ml-[4.5vw] bg-[rgb(34_139_34)] rounded-[5px] shadow-[2px_2px_10px_-2px_black] text-blue-100 text-xl">
+                <button class="absolute bg-red-700 rounded-[5px] w-6 h-6 right-[0vw]" id="exit"><img src="https://icongr.am/material/close-thick.svg?size=20&color=ffffff" alt="exit-icon" class="ml-[2px]"></button>
+            </form>
+
+            <div class="w-[23vw] h-[25vh] shadow-[2px_2px_10px_black] px-5 pt-5 text-[1.5vw] rounded-[5px]" style="background-color: rgba(0, 0, 0, .5); display: none;" id="accepted-register">
+                <p class="text-slate-300 mx-2" style="filter: drop-shadow(2px 1px 0px black);">User Successfully Registered</p>
+                <a href="" class="mx-[2.5vw] h-12 w-[15vw] py-2 px-3 block mt-16 text-blue-100 shadow-[2px_2px_10px_black] bg-[rgb(34_139_34)] rounded-[5px]">Back to Home Page</a>
+            </div>
+        </div>
+        <script src="registered-user.js"></script>
+    </body>
+</Html>

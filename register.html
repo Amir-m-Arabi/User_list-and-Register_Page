@@ -1,0 +1,28 @@
+<Html>
+    <head>
+        <link rel="stylesheet" href="./src/output.css">
+        <link rel="icon" type="images/png" href="./images/icons8-register-50.png">
+        <title>Regiser</title>
+    </head>
+    <body class="flex justify-center items-center" style="background-image: url('./images/HD-wallpaper-mountains-spruces-ai-art-road-meadow.jpg'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; backdrop-filter: blur(2.5px);">
+        <form class="grid grid-rows-5 gap-8 shadow-[2px_2px_10px_black] w-[25vw] h-[50vh] px-[3vw] pt-[4vh] pb-5 rounded-[5px]" id="register">
+            <img src="https://icongr.am/material/account-tie.svg?size=30&color=currentColor" class="absolute w-7 left-[41vw] top-[28.5vh]" alt="firstname-icon">
+            <input type="text" placeholder="Firstname" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] pl-14 bg-blue-100 text-slate-700" id="firstname">
+            <img src="https://icongr.am/material/account-tie.svg?size=30&color=currentColor" class="absolute left-[41vw] top-[38vh]" alt="lastname-icon">
+            <input type="text" placeholder="Lastname" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] pl-14 bg-blue-100 text-slate-700" id="lastname">
+            <img src="https://icongr.am/material/account.svg?size=30&color=currentColor" class="absolute left-[41vw] top-[47.5vh]" alt="username-icon">
+            <input type="text" placeholder="Username" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] pl-14 bg-blue-100 text-slate-700" id="username">
+            <img src="https://icongr.am/material/account-key.svg?size=30&color=currentColor" class="absolute left-[41vw] top-[57vh]" alt="password-icon">
+            <input type="password" placeholder="Password" required class="rounded-[5px] outline-0 border-0 shadow-[2px_2px_10px_black] pl-14 bg-blue-100 text-slate-700" id="password">
+            <p class="absolute bottom-[35vh] left-[43vw] text-red-700" style="display: none;" id="error-message">Be more than 8 characters</p>
+            <input type="submit" value="Register" class="border-0 outline-0 w-[10vw] ml-[4.5vw] bg-[rgb(34_139_34)] rounded-[5px] shadow-[2px_2px_10px_-2px_black] text-blue-100">
+        </form>
+
+        <div class="w-[23vw] h-[25vh] shadow-[2px_2px_10px_black] px-5 pt-5 text-[1.5vw] rounded-[5px]" style="background-color: rgba(0, 0, 0, .5); display: none;" id="accepted-register">
+            <p class="text-slate-300 mx-2" style="filter: drop-shadow(2px 1px 0px black);">User Successfully Registered</p>
+            <a href="" class="mx-[2.5vw] h-12 w-[15vw] py-2 px-3 block mt-16 text-blue-100 shadow-[2px_2px_10px_black] bg-[rgb(34_139_34)] rounded-[5px]">Back to Home Page</a>
+        </div>
+
+        <script src="register.js"></script>
+    </body>
+</Html>
